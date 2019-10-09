@@ -106,3 +106,4 @@ ENV/
 *.fdb_latexmk
 *.synctex.gz
 *.tex
+*.csv
