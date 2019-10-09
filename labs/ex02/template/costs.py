@@ -8,6 +8,7 @@ def compute_loss(y, tx, w):
     """
     # ***************************************************
     # INSERT YOUR CODE HERE
-    # TODO: compute loss by MSE / MAE
-    # ***************************************************
-    raise NotImplementedError
+    # TODO: compute loss by MSE
+    N=y.shape[0]
+    e=y-tx.dot(w)
+    return 1/(2*N)*np.sum(e**2,axis=0)
