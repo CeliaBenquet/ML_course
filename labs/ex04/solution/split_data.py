@@ -23,4 +23,4 @@ def split_data(x, y, ratio, seed=1):
     x_te = x[index_te]
     y_tr = y[index_tr]
     y_te = y[index_te]
-    return x_tr, x_te, y_tr, y_te
+    return y_tr, x_tr, y_te, x_te

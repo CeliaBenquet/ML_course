@@ -15,6 +15,15 @@ def cross_validation_visualization(lambds, mse_tr, mse_te):
     plt.grid(True)
     plt.savefig("cross_validation")
 
+def cross_validation_degree_visualization(degrees, best_lamb):
+    """visualization the curves of mse_tr and mse_te."""
+    plt.plot(degrees, best_lamb, marker=".", color='b')
+    plt.xlabel("degree")
+    plt.ylabel("rmse for best lambda")
+    plt.title("cross validation")
+    plt.grid(True)
+    plt.savefig("cross_validation")
+
 
 def bias_variance_decomposition_visualization(degrees, rmse_tr, rmse_te):
     """visualize the bias variance decomposition."""
